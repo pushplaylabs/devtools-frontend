@@ -100,6 +100,7 @@ export class ScreencastApp implements Common.App.App,
     this.toggleButton.setToggled(enabled);
     if (enabled) {
       this.rootSplitWidget.showBoth();
+      this.rootSplitWidget.hideSidebar(false);
     } else {
       this.rootSplitWidget.hideMain();
     }

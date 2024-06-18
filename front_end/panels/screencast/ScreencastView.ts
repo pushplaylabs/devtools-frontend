@@ -158,7 +158,7 @@ export class ScreencastView extends UI.Widget.VBox implements SDK.OverlayModel.H
   initialize(): void {
     this.element.classList.add('screencast');
 
-    this.createNavigationBar();
+    // this.createNavigationBar();
     this.viewportElement = this.element.createChild('div', 'screencast-viewport hidden') as HTMLElement;
     this.canvasContainerElement = this.viewportElement.createChild('div', 'screencast-canvas-container') as HTMLElement;
     this.glassPaneElement =
