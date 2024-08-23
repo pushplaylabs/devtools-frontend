@@ -24,8 +24,6 @@ function describeBody(fn: () => void) {
     }
     await deinitializeGlobalVars();
     await import('../entrypoints/shell/shell.js');
-    await import('../panels/elements/elements-meta.js');
-    await import('../panels/sensors/sensors-meta.js');
     await import('../entrypoints/inspector_main/inspector_main-meta.js');
     let response = await fetch('/json/list', {method: 'PUT'});
     const targetList = await response.json();
